@@ -1,12 +1,11 @@
-![](archiver.png)
 
-Archiver is a command-line application designed to interact with large language models (LLMs) for testing purposes.
-It leverages Ollama for model integration and SurrealDB as the vector store. The application uses [Langchain-rust](https://github.com/Abraxas-365/langchain-rust) as the 
-framework for interacting with the Ollama and SurrealDB.
+Advisor is your answer to dealing with professional services. When you purchase a tool its possible you'll get
+professional services. This is when an expert or SME(Subject Matter Expert) is there to advise your or implement
+the tool you've purchased. Advisor prepares you for the engagement.
 
 ## Prerequisites
 
-Before setting up Archiver, ensure you have the following installed on your system:
+Before setting up Advisor, ensure you have the following installed on your system:
 
 - Rust (latest stable version)
 - `just` (command runner)
@@ -52,7 +51,7 @@ Add directory of Markdown
 cargo run -- -d <directory>
 ```
 
-#### Finally Run Archiver and use it
+#### Finally Run Advisor and use it
 
 ```bash
 just run
@@ -61,7 +60,7 @@ just run
 ## Change Log
 
 #### v0.3.2
-- **Quick Start with Docker**: Update to Justfile and Readme to walk through setting up Archiver with docker
+- **Quick Start with Docker**: Update to Justfile and Readme to walk through setting up Advisor with docker
 
 #### v0.3.1
 - **Check for Pandoc**: Ensure pandoc exists before running
@@ -84,13 +83,13 @@ just run
 - **Ollama Integration**: Easy setup and use of Ollama for model management.
 - **Indexing Files**: Add Markdown files to SurrealDB.
 
-## Install Archiver
+## Install Advisor
 
 1. **Install using Cargo**:
     ```bash
-    cargo install archiver
+    cargo install Advisor
     ```
-    Make sure you have SurrealDB setup and Ollama before running Archiver
+    Make sure you have SurrealDB setup and Ollama before running Advisor
 
 
 1. **Download and Install SurrealDB**:
@@ -107,7 +106,7 @@ just run
 
 Once Surreal is up and running you can use https://surrealist.app/ to access the instance of Surreal. 
 But before doing that a Namespace and Table need to be setup. Fastest way to get this done is to run
-Archiver once. 
+Advisor once. 
 
 1. **Set Namespace and Table**:
     ```bash
@@ -120,12 +119,12 @@ Archiver once.
     ```
     
 
-### Archiver
+### Advisor
 
 1. **Setup from Source**:
     ```bash
-    git clone https://github.com/yourusername/archiver.git
-    cd archiver
+    git clone https://github.com/lukemilby/advisor.git
+    cd advisor
     just db_dev # run in a seperate terminal
     just run
     ```
